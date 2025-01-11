@@ -3,10 +3,12 @@ import { Basket } from '../../components';
 import style from './header-layout.module.css';
 
 export const HeaderLayout = () => {
-    return <>
-        <div className={style.subheader}>
-            <Basket />
-        </div>
-        <Outlet />
+  return (
+    <>
+      <div className={style.subheader}>
+        <Basket />
+      </div>
+      <Outlet />
     </>
-}
+  );
+};

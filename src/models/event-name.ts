@@ -1,3 +1,3 @@
 export enum EventName {
-    addBasketItem = 'addBasketItem'
+  addBasketItem = 'addBasketItem', // eslint-disable-line no-unused-vars
 }

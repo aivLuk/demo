@@ -1,10 +1,8 @@
-
 # Short description
 
-The basket skeleton is prepared. When a new order item is added to the basket, a notification box is displayed to inform the user that the order has been placed. 
+The basket skeleton is prepared. When a new order item is added to the basket, a notification box is displayed to inform the user that the order has been placed.
 
 <img src="assets/basket-center.png" width="50%" alt="centered basket">
-
 
 ## What is wrong ?
 
@@ -40,8 +38,8 @@ On mobile devices (using a breakpoint of 480px), the notification box should beh
 
 ## Key points
 
-* the basket can be placed anywhere on the screen
-* the screen may include scroll bars
-* the notification box should be responsive and work on all types of screens
-* all existing source code can be modified or restructured if necessary
-* clean code is an important factor; keep SOLID principles in mind
+- the basket can be placed anywhere on the screen
+- the screen may include scroll bars
+- the notification box should be responsive and work on all types of screens
+- all existing source code can be modified or restructured if necessary
+- clean code is an important factor; keep SOLID principles in mind

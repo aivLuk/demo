@@ -7,9 +7,9 @@ function App() {
     <Routes>
       <Route element={<MainLayout />}>
         <Route element={<HeaderLayout />}>
-          <Route path='/' element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Route>
-        <Route path='/task' element={<Task />} />
+        <Route path="/task" element={<Task />} />
       </Route>
     </Routes>
   );
