@@ -1,5 +1,17 @@
 .subheader {
-  justify-content: center;
   display: flex;
   margin-bottom: 4rem;
+  position: relative;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.center {
+  justify-content: center;
+}
+
+.end {
+  justify-content: flex-end;
 }

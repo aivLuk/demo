@@ -4,8 +4,19 @@
   padding: 1rem;
   position: absolute;
   width: 400px;
-  margin-left: -200px;
   text-align: center;
+}
+
+.start {
+  left: 0;
+}
+
+.center {
+  margin-left: -200px;
+}
+
+.end {
+  right: 0;
 }
 
 .fadeOut {
@@ -22,5 +33,19 @@
   to {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .notificationBox {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .center {
+    margin-left: 0;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

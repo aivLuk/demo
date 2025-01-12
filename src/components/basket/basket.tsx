@@ -4,7 +4,11 @@ import { EventName, Notification } from '../../models';
 import { useEventSubscribe } from '../../hooks';
 import { NotificationBox } from './notification-box';
 
-export const Basket = () => {
+interface BasketProps {
+  basketPosition: 'start' | 'center' | 'end';
+}
+
+export const Basket = ({ basketPosition }: BasketProps) => {
   const [notification, setNotification] = useState<Notification>();
   const handleAddBasketItem = ({ id }: Notification) => {
     setNotification({ id });
@@ -15,7 +19,11 @@ export const Basket = () => {
     <div>
       <BiBasket size={25} title="basket" />
       {notification && (
-        <NotificationBox key={notification.id} id={notification.id} />
+        <NotificationBox
+          key={notification.id}
+          id={notification.id}
+          basketPosition={basketPosition}
+        />
       )}
     </div>
   );
