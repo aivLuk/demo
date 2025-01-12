@@ -1,12 +1,12 @@
-import { EventName } from '../../models';
-import { publishEvent } from '../../utils';
 import { Button } from '../../components';
+import { useBasket } from '../../context';
 
 export const Home = () => {
+  const { addItem } = useBasket();
+
   const handleAddBasketItem = () => {
-    publishEvent(EventName.addBasketItem, {
-      id: Math.floor(Math.random() * 100),
-    });
+    const newItem = { id: Math.floor(Math.random() * 100) };
+    addItem(newItem);
   };
 
   return (

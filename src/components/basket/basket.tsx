@@ -1,7 +1,5 @@
-import { useState } from 'react';
+import { useBasket } from '../../context';
 import { BiBasket } from 'react-icons/bi';
-import { EventName, Notification } from '../../models';
-import { useEventSubscribe } from '../../hooks';
 import { NotificationBox } from './notification-box';
 
 interface BasketProps {
@@ -9,11 +7,7 @@ interface BasketProps {
 }
 
 export const Basket = ({ basketPosition }: BasketProps) => {
-  const [notification, setNotification] = useState<Notification>();
-  const handleAddBasketItem = ({ id }: Notification) => {
-    setNotification({ id });
-  };
-  useEventSubscribe(EventName.addBasketItem, handleAddBasketItem);
+  const { notification } = useBasket();
 
   return (
     <div>
